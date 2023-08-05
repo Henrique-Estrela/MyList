@@ -3,7 +3,9 @@
     margin: 0;
     font-family: 'Times New Roman', Times, sans-serif;
 }
-
+html, body, header{
+    height: 100%;
+}
 
 body.themedark{
     background-color: #262626;   
@@ -21,7 +23,7 @@ a, li, ul{
 }
 
 
-.center{
+.center, header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,16 +31,24 @@ a, li, ul{
 
 
 /* ============= NAVBAR ============= */
+header{
+    justify-content: unset;
+}
 
 nav{
     display: flex;
     position: relative;
     width: 20rem;
-    height: 96vh;
+    height: 95vh;
     left: 1rem;
-    top: 1rem;
     background-color: #151515;
     border-radius: 7px;
     color: #ffffff;
+}
+
+nav .bar{
+    display: flex;
+    justify-content: space-between;
+
 }
 
