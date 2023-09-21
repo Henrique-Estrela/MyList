@@ -32,10 +32,11 @@ a, li, ul{
     color: unset;
 }
 
-.center, header, .search, nav form div, .number, .list ul li{
+.center, header, .search, nav form div, .number, .list ul, .list div, .list div div{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -160,11 +161,11 @@ nav form div:hover{
 }
 
 .foco{
-    z-index: -1;
     border-radius: 10px;
-    width: auto ;
-    height: auto;
-    padding: 8px 2px 5px 5px;
+    width: 15.5rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background-color: #ffffff65;
 }
 
@@ -172,9 +173,27 @@ nav form div:hover{
     margin-top: 1rem;
 }
 
+.list div{
+    justify-content: space-between;
+}
+
+
+.list ul a{
+    flex-direction: column;
+}
+
+
+/* ============= BTN ============= */
+
+
+.btn-add{
+    width: 3rem;
+    height: 2.5rem;
+    margin: 1rem;
+    font-size: 1.5em;
+}
 
 
 .btn{
     cursor: pointer;
-    
 }
