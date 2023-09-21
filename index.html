@@ -6,12 +6,22 @@
     <title>MyList</title>
 <!-- CSS -->
     <link rel="stylesheet" href="src/css/style.css">
+
 <!-- JS -->
-    <script src="src/ja/script.js" defer></script>
+    <script src="src/js/script.js" defer></script>
 
 <!-- Font Awesome -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.cs"> -->
-<link rel="stylesheet" href="vendor/fontawesome.css">
+    <link rel="stylesheet" href="vendor/fontawesome.css">
+
+<!-- Icone -->
+    <link rel="icon" href="src/img/icon.png">
+
+<!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
+>>>>>>> 3b130b95cae7624e569eb79547a17e9cf4bf8f4d
 
 </head>
 <body class="themedark">
@@ -19,18 +29,50 @@
         <nav class="navbar">
             <div class="bar">
                 <div class="menu">
-                    <a href="#" class="logo"><span>My</span>List</a>
+                    <h1><a href="#" class="logo"><span>My</span>List</a></h1>
                     <div class="icone"><i class="fa-solid fa-bars"></i></div>
                 </div>
                 <div class="search">
                     <form action="" class="forms">
-                        <input type="text" name="" id="">
+                        <input type="text" name="search" id="search" placeholder="Pesquisar">
                         <div>
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
                     </form>
                 </div>
-                
+                <div class="tarefas">
+                    <h2>Tarefas</h2>
+                    <ul>
+                        <li class="foco"><a href=""> 
+                            <i class="fa-solid fa-note-sticky"></i>
+                            <span>Lembretes</span></a> 
+                            <div class="number">0</div>
+                        </li>
+                        <li><a href=""> 
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Tarefas</span></a> 
+                            <div class="number">0</div>
+                        </li>
+                        <li><a href=""> 
+                            <i class="fa-regular fa-calendar-plus"></i>
+                            <span>Calendário</span></a> 
+                            <div class="number">0</div>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="list">
+                    <h2>Lista</h2>
+                    <ul>
+                        <li class="btn"> 
+                            <i class="fa-regular fa-plus"></i>
+                            <span>Add Lista</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="configs">
+
+                </div>
             </div>
         </nav>
     </header>
